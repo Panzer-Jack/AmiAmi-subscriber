@@ -5,15 +5,15 @@ AmiAmi Item Subscription Notifier
 This project monitors specified search pages on AmiAmi (an online store for anime figures and merchandise) and sends email notifications when new items or updates are detected.
 
 Features
-	•	Automatically monitors specified AmiAmi search pages.
-	•	Triggers notifications when new items or updates are detected.
-	•	Sends update notifications via email.
-	•	Saves the running state to avoid duplicate notifications.
+- Automatically monitors specified AmiAmi search pages.
+- Triggers notifications when new items or updates are detected.
+- Sends update notifications via email.
+- Saves the running state to avoid duplicate notifications.
 
 Prerequisites
-	1.	Node.js (version >= 16.0.0).
-	2.	Playwright for browser automation.
-	3.	Nodemailer for sending emails.
+	1. Node.js (version >= 16.0.0).
+	2. Playwright for browser automation.
+	3. Nodemailer for sending emails.
 
 Installation Steps
 
@@ -63,14 +63,14 @@ crontab -e
 ```
 
 How It Works
-	1.	Browser Automation:
-	•	Uses Playwright to automatically open the specified AmiAmi search pages.
-	•	Intercepts API responses from the page to retrieve item data.
-	2.	State Comparison:
-	•	Saves the current item state to the lastState.json file.
-	•	Compares it with the previously saved state to detect new items or updates.
-	3.	Email Notifications:
-	•	If updates are detected, sends email notifications with links to the updated pages.
+	1. Browser Automation:
+		- Uses Playwright to automatically open the specified AmiAmi search pages.
+		- Intercepts API responses from the page to retrieve item data.
+	2. State Comparison:
+		- Saves the current item state to the lastState.json file.
+		- Compares it with the previously saved state to detect new items or updates.
+	3. Email Notifications:
+		- If updates are detected, sends email notifications with links to the updated pages.
 
 Contribution
 
