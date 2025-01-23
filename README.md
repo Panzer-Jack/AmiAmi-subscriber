@@ -63,14 +63,14 @@ crontab -e
 ```
 
 How It Works
-	1. Browser Automation:
-		- Uses Playwright to automatically open the specified AmiAmi search pages.
-		- Intercepts API responses from the page to retrieve item data.
-	2. State Comparison:
-		- Saves the current item state to the lastState.json file.
-		- Compares it with the previously saved state to detect new items or updates.
-	3. Email Notifications:
-		- If updates are detected, sends email notifications with links to the updated pages.
+1. Browser Automation:
+	- Uses Playwright to automatically open the specified AmiAmi search pages.
+	- Intercepts API responses from the page to retrieve item data.
+2. State Comparison:
+	- Saves the current item state to the lastState.json file.
+	- Compares it with the previously saved state to detect new items or updates.
+3. Email Notifications:
+	- If updates are detected, sends email notifications with links to the updated pages.
 
 Contribution
 
