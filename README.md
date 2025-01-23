@@ -1,3 +1,4 @@
+[中文文档](https://github.com/Panzer-Jack/AmiAmi-subscriber/blob/main/README_ZH.md)
 AmiAmi Item Subscription Notifier
 
 This project monitors specified search pages on AmiAmi (an online store for anime figures and merchandise) and sends email notifications when new items or updates are detected.
@@ -14,25 +15,25 @@ Prerequisites
 	3.	Nodemailer for sending emails.
 
 Installation Steps
-	1.	Clone the project repository:
+
+1.	Clone the project repository:
 ```
 git clone https://github.com/your-username/amiami-notifier.git
 cd amiami-notifier
 ```
 
-	2.	Install dependencies:
+2.	Install dependencies:
 ```
 npm install
 ```
 
-	3.	Configure email settings in index.js:
-
+3.	Configure email settings in index.js:
+```js
 const MY_Email = 'your-email@example.com'; // Email to receive notifications
 const SERVER_EMAIL = 'server-email@example.com'; // Email used to send notifications
 const SERVER_EMAIL_PASS = 'your-email-password'; // Password for the sender email
-
-
-	4.	Replace the URLS array with the AmiAmi search links you want to monitor:
+```
+4.	Replace the URLS array with the AmiAmi search links you want to monitor:
 ```js
 const URLS = [
     'https://www.amiami.com/cn/search/list/?s_maker_id=7824&...',
@@ -50,15 +51,16 @@ node src/index.js
 Schedule the Script with Cron
 
 If you want to check for updates regularly, you can use cron to schedule tasks:
-	1.	Open the crontab editor:
+1.	Open the crontab editor:
 ```
 crontab -e
 ```
 
-	2.	Add the following line to schedule the script to run daily at 9 PM:
+2.	Add the following line to schedule the script to run daily at 9 PM:
 ```
 0 21 * * * /path/to/node /path/to/project/src/index.js >> /path/to/project/cron_output.log 2>&1
 ```
+
 How It Works
 	1.	Browser Automation:
 	•	Uses Playwright to automatically open the specified AmiAmi search pages.
