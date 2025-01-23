@@ -1,4 +1,5 @@
 [中文文档](https://github.com/Panzer-Jack/AmiAmi-subscriber/blob/main/README_ZH.md)
+
 AmiAmi Item Subscription Notifier
 
 This project monitors specified search pages on AmiAmi (an online store for anime figures and merchandise) and sends email notifications when new items or updates are detected.
