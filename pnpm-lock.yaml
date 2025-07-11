@@ -7,7 +7,7 @@ settings:
 dependencies:
   nodemailer:
     specifier: ^7.0.0
-    version: 7.0.4
+    version: 7.0.5
   playwright:
     specifier: ^1.49.1
     version: 1.54.1
@@ -22,8 +22,8 @@ packages:
     dev: false
     optional: true
 
-  /nodemailer@7.0.4:
-    resolution: {integrity: sha512-9O00Vh89/Ld2EcVCqJ/etd7u20UhME0f/NToPfArwPEe1Don1zy4mAIz6ariRr7mJ2RDxtaDzN0WJVdVXPtZaw==}
+  /nodemailer@7.0.5:
+    resolution: {integrity: sha512-nsrh2lO3j4GkLLXoeEksAMgAOqxOv6QumNRVQTJwKH4nuiww6iC2y7GyANs9kRAxCexg3+lTWM3PZ91iLlVjfg==}
     engines: {node: '>=6.0.0'}
     dev: false
 
